@@ -1,0 +1,23 @@
+a=int(input())
+b=list(map(int,input().split()))
+c=0
+d=0
+e=0
+f=len(b)
+for i in range(len(b)):
+    if(b[i]>0):
+        c+=1
+    elif(b[i]<0):
+        d+=1
+    else:
+        e+=1
+if(f%2==0):
+    f=f//2
+else:
+    f=(f//2)+1
+if(c>=f):
+    print("1")
+elif(d>=f):
+    print('-1')
+else:
+    print(0)

@@ -1,0 +1,19 @@
+a,d,m=list(map(int,input().split()))
+g,p,b=list(map(int,input().split()))
+f=1
+if(g>=a):
+    g=g-a
+else:
+    f=0
+if(g+p>=d):
+    g=g-a
+else:
+    f=0
+if(g+p+b>=m):
+    g=g-a
+else:
+    f=0
+if(f!=0):
+    print("YES")
+else:
+    print("NO")

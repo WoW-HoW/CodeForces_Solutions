@@ -1,0 +1,15 @@
+a=int(input())
+b=a//100
+a-=b*100
+#print(a,b)
+b+=a//20
+a-=a//20*20
+#print(a,b)
+b+=a//10
+a-=a//10*10
+#print(a,b)
+b+=a//5
+a-=a//5*5
+#print(a,b)
+b+=a//1
+print(b)
